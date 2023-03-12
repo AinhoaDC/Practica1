@@ -37,7 +37,6 @@ def add_data(storage,pid, data, mutex, productores):
         mutex.release() 
 
 #La función a continuación sirve para añadir un -1 cuando un productor ha terminado de producir. 
-#La siguiente función habría que cambiarla pero aun no estoy segura de cómo. 
 def add_data1(storage,pid, data, mutex,productores): 
     mutex.acquire()
     try: 
